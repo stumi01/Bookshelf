@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Bookshelf</string>
+    <string name="generic_error_message">Ooops, There was an error. \nPlease check your internet connection and try
+        again.
+    </string>
+    <string name="retry">Retry</string>
+    <string name="add_title_hint">Title of the Book</string>
+    <string name="add_author_hint">@string/author</string>
+    <string name="add_price_hint">Price (USD)</string>
+    <string name="add_cover_hint">@string/coverUrl</string>
+    <string name="add_book">Add Book</string>
+    <string name="error_wrong_cover_url">Cannot recognize URL!</string>
+    <string name="upload_network_error">There was a problem during upload.</string>
+    <string name="upload_validation_error">There was a problem with the following fields:</string>
+    <string name="upload_success">Success!! Your Book id is: %d</string>
+    <string name="title">Title</string>
+    <string name="author">Author</string>
+    <string name="price">Price</string>
+    <string name="coverUrl">Cover url</string>
+    <string name="paging_end_reached">You reached the end of the catalog.</string>
+</resources>
