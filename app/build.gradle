@@ -10,7 +10,7 @@ android {
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
         release {
@@ -20,11 +20,15 @@ android {
     }
 }
 
+allOpen {
+    annotation("com.bencestumpf.bookshelf.helper.OpenClass")
+}
+
 def retrofitVersion = '2.3.0'
 def rxandroid = '2.0.1'
 def rxjava = '2.1.1'
 def okhttp3Logging = '3.8.1'
-def testRunnerVersion = "1.0.2"
+def testRunnerVersion = "1.1.0"
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
@@ -72,9 +76,9 @@ dependencies {
         exclude group: 'org.jetbrains.kotlin'
     }
 
-    androidTestImplementation "com.android.support.test:runner:$testRunnerVersion"
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-    androidTestImplementation("com.android.support.test:rules:$testRunnerVersion") {
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+    androidTestImplementation "androidx.test:runner:$testRunnerVersion"
+    androidTestImplementation("androidx.test:rules:$testRunnerVersion") {
         // Necessary to avoid version conflicts
         exclude group: 'com.android.support', module: 'support-annotations'
     }

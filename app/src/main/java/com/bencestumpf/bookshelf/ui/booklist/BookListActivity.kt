@@ -37,7 +37,7 @@ class BookListActivity : AppCompatActivity() {
     private val swipeRefreshLayout: SwipeRefreshLayout by bindView(R.id.swipeRefreshLayout)
     private val recyclerView: RecyclerView by bindView(R.id.recycler_view)
 
-    private val addBook: FloatingActionButton by bindView(R.id.add_book)
+    private val addBook: FloatingActionButton by bindView(R.id.add_book_floating)
 
     private val itemAdapter = ItemAdapter<BookPM>()
     private val footerAdapter = ItemAdapter<ProgressItem>()

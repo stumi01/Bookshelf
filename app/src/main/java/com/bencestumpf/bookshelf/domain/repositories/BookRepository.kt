@@ -1,8 +1,10 @@
 package com.bencestumpf.bookshelf.domain.repositories
 
 import com.bencestumpf.bookshelf.data.model.Book
+import com.bencestumpf.bookshelf.helper.OpenClass
 import io.reactivex.Single
 
+@OpenClass
 class BookRepository(private val remote: Remote) {
 
     fun getBooks(page: Int): Single<List<Book>> {
