@@ -18,4 +18,5 @@
     <string name="price">Price</string>
     <string name="coverUrl">Cover url</string>
     <string name="paging_end_reached">You reached the end of the catalog.</string>
+    <string name="price_placeholder">%1$.2f $</string>
 </resources>

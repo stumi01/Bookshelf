@@ -71,7 +71,7 @@ class DetailsActivity : AppCompatActivity() {
         contentView.visibility = View.VISIBLE
         title.text = content.title
         author.text = content.author
-        price.text = content.price.toString()//TODO
+        price.text = getString(R.string.price_placeholder, content.price)
         Glide.with(this).load(content.coverUrl).into(cover)
     }
 

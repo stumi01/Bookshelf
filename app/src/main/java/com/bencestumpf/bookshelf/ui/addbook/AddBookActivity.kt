@@ -23,7 +23,7 @@ class AddBookActivity : AppCompatActivity() {
     private val title: EditText by bindView(R.id.book_add_title)
     private val author: EditText by bindView(R.id.book_add_author)
     private val price: EditText by bindView(R.id.book_add_price)
-    private val coverURL: EditText by bindView(R.id.book_add_cover_button)
+    private val coverURL: EditText by bindView(R.id.book_add_cover_url)
     private val cover: ImageView by bindView(R.id.book_add_cover_preview)
     private val upload: Button by bindView(R.id.book_add_upload)
 
